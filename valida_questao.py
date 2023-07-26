@@ -34,3 +34,6 @@ def valida_questao(questao):
         retorno['correta'] = 'valor_errado'
     
     return retorno
+
+def valida_questoes(lista_questoes):
+    return [valida_questao(questao) for questao in lista_questoes]
